@@ -4,23 +4,21 @@
     <HelloWorld msg="Hello World!"/>
     <Form/>
     <button type="button" v-on:click="alertMe">Alert Me</button>
-    <Vuetest message="what's Vue?"/>
+    <VueTest message="what's Vue?"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
 import Form from './components/form.vue'
-
-import Vuetest from './components/vuetest.vue'
+import VueTest from './components/VueTest.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Form,
-    Vuetest
+    VueTest
   },
   methods: {
     alertMe() {
