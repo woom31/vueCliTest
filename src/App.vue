@@ -2,8 +2,9 @@
   <div id="app">
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <HelloWorld msg="Hello World!"/>
-    <button type="button" v-on:click="alertMe">Alert Me</button>
     <Form/>
+    <button type="button" v-on:click="alertMe">Alert Me</button>
+    <Vuetest message="what's Vue?"/>
   </div>
 </template>
 
@@ -12,15 +13,19 @@ import HelloWorld from './components/HelloWorld.vue'
 
 import Form from './components/form.vue'
 
+import Vuetest from './components/vuetest.vue'
+
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Form
+    Form,
+    Vuetest
   },
   methods: {
     alertMe() {
-      alert('test');
+      alert("test");
+      console.log("test");
     }
   }
 }

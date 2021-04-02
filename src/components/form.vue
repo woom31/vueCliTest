@@ -1,7 +1,7 @@
 <template>
     <div>
         <form name="loginform">
-            <input type="text" name="hello"/>
+            <input type="text" name="loginid"/>
         </form>
     </div>
 </template>
@@ -9,11 +9,12 @@
 
 <script>
 export default {
-    name: 'form',
+    name: 'loginform',
     props: {
         msg: String
     }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
