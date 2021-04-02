@@ -1,19 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--<img alt="Vue logo" src="./assets/logo.png">-->
+    <HelloWorld msg="Hello World!"/>
+    <button type="button" v-on:click="alertMe">Alert Me</button>
+    <Form/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
+import Form from './components/form.vue'
+
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Form
+  },
+  methods: {
+    alertMe() {
+      alert('test');
+    }
   }
 }
+
 </script>
 
 <style>
